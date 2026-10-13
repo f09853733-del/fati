@@ -1,0 +1,2 @@
+# fati
+my first repository
