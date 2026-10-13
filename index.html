@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" id="html-root">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="lang-fa">کلوب گیمینگ آرنادینک | Arnadinc Esports</title>
+    <title class="lang-en">Arnadinc Esports Clan</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="lang-fa-mode">
+
+    <!-- ناوبری بالای صفحه -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <span class="lang-fa">⚡ آرنادینک اسپرتس</span>
+                <span class="lang-en">⚡ Arnadinc Esports</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#tournaments" class="lang-fa">تورنمنت‌ها</a><a href="#tournaments" class="lang-en">Tournaments</a></li>
+                <li><a href="#gallery" class="lang-fa">گالری عکس</a><a href="#gallery" class="lang-en">Gallery</a></li>
+                <li><a href="#contact" class="lang-fa">ارتباط با کلوب</a><a href="#contact" class="lang-en">Contact</a></li>
+            </ul>
+            <div class="lang-switcher">
+                <button onclick="switchLanguage()">🌐 English / فارسی</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- بنر اصلی هدر -->
+    <header class="hero">
+        <div class="container hero-content">
+            <h1 class="lang-fa">به دنیای رقابت‌های حرفه‌ای گیمینگ خوش آمدید</h1>
+            <h1 class="lang-en">Welcome to the Ultimate Esports Arena</h1>
+            <p class="lang-fa">در تورنمنت‌های آنلاین arnadinc.com شرکت کنید و جوایز بزرگ ببرید!</p>
+            <p class="lang-en">Join online tournaments at arnadinc.com and win massive prizes!</p>
+            <a href="#tournaments" class="hero-btn lang-fa">مشاهده تورنمنت‌ها</a>
+            <a href="#tournaments" class="hero-btn lang-en">View Tournaments</a>
+        </div>
+    </header>
+
+    <!-- بخش تورنمنت‌ها و مسابقات -->
+    <main class="container main-section" id="tournaments">
+        <h2 class="section-title lang-fa">تورنمنت‌های فعال</h2>
+        <h2 class="section-title lang-en">Active Tournaments</h2>
+        
+        <div class="game-grid">
+            
+            <!-- بازی اول -->
+            <div class="game-card">
+                <div class="img-container">
+                    <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=800&q=80" alt="Valorant">
+                    <span class="badge lang-fa">جایزه ویژه</span>
+                    <span class="badge lang-en">Big Prize</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="lang-fa">مسابقات قهرمانی والورانت</h3>
+                    <h3 class="lang-en">Valorant Championship</h3>
+                    <p class="lang-fa">رقابت تیم‌های ۵ نفره در مپ‌های مختلف با داوری آنلاین</p>
+                    <p class="lang-en">5v5 team competition across various maps with online refereeing</p>
+                    <div class="game-specs">
+                        <span class="lang-fa">🏆 جایزه: ۵۰ میلیون تومان</span>
+                        <span class="lang-en">🏆 Prize: $2,000</span>
+                        <span class="lang-fa">👥 ظرفیت: ۱۶ تیم</span>
+                        <span class="lang-en">👥 Slots: 16 Teams</span>
+                    </div>
+                    <button class="btn lang-fa" onclick="joinTournament('والورانت')">ثبت‌نام در تورنمنت</button>
+                    <button class="btn lang-en" onclick="joinTournament('Valorant')">Register Now</button>
+                </div>
+            </div>
+
+            <!-- بازی دوم -->
+            <div class="game-card">
+                <div class="img-container">
+                    <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=800&q=80" alt="CS2">
+                    <span class="badge lang-fa">پرطرفدار</span>
+                    <span class="badge lang-en">Popular</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="lang-fa">لیگ کاستوم کانتر استرایک ۲</h3>
+                    <h3 class="lang-en">CS2 Custom League</h3>
+                    <p class="lang-fa">نبرد تاکتیکی و سریع در سرورهای اختصاصی با پینگ عالی</p>
+                    <p class="lang-en">Tactical and fast-paced battle on dedicated low-ping servers</p>
+                    <div class="game-specs">
+                        <span class="lang-fa">🏆 جایزه: ۳۰ میلیون تومان</span>
+                        <span class="lang-en">🏆 Prize: $1,200</span>
+                        <span class="lang-fa">👥 ظرفیت: ۳۲ بازیکن</span>
+                        <span class="lang-en">👥 Slots: 32 Players</span>
+                    </div>
+                    <button class="btn lang-fa" onclick="joinTournament('کانتر استرایک ۲')">ثبت‌نام در تورنمنت</button>
+                    <button class="btn lang-en" onclick="joinTournament('CS2')">Register Now</button>
+                </div>
+            </div>
+
+            <!-- بازی سوم -->
+            <div class="game-card">
+                <div class="img-container">
+                    <img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?auto=format&fit=crop&w=800&q=80" alt="Dota 2">
+                    <span class="badge lang-fa">حرفه‌ای</span>
+                    <span class="badge lang-en">Pro Tier</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="lang-fa">جام حذفی دوتا ۲</h3>
+                    <h3 class="lang-en">Dota 2 Cup</h3>
+                    <p class="lang-fa">بزرگترین رویداد فصل برای کلوب‌های حرفه‌ای دوتا</p>
+                    <p class="lang-en">The 
